@@ -1,0 +1,315 @@
+
+        /* ------------------------------------- Navbar Section -------------------------------- */
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-color: rgb(59, 57, 57);
+        }
+        header{
+             height: 100vh;
+              background-size: cover;
+              background-position: center;
+              padding: 10px 20px;
+              background-image: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7) ),
+               url(header-image.png);
+        } 
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+             margin: 0 110px;
+        }
+        .logo{
+            padding: 10px 0 0 0;
+            width: 130px;
+        }
+        nav #but02{
+            border-radius: 5px;
+            padding: 6px 10px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border: none;
+            margin: 0 20px 0 10px;
+        }
+        nav #but02:hover{
+            background-color: rgb(174, 8, 8);
+            transition: 0.5s;
+        }
+        #but01{
+            background: transparent;
+            border-radius: 4px ;
+            padding: 5px 15px;
+            color: white;
+            border: 1px solid rgb(117, 114, 114);
+            margin-right: 20px;
+        }
+        #but01 img{
+             width: 10px;
+        
+        }
+         .header-text{
+            width: 100%;
+            color: white;
+             position: absolute;
+             top: 60%;
+             left: 50%;
+             transform: translate(-50%,-50%);
+             text-align: center;
+             margin-top: 10px;
+         }
+         .header-text h1{
+             font-size: 40px;
+             padding: 20px 0;
+         }
+         .header-text h3{
+            font-size: 13px;
+            padding: 0 0 5px 0;
+         }
+         .header-text h5{
+            padding: 0 0 10px 0;
+         }
+         #email{
+            border-radius: 5px;
+            padding: 10px 30px;
+            width: 220px;
+            background: transparent;
+            border: 1px solid rgb(122, 114, 114);
+            color: white;
+         }
+         #submit{
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 10px 30px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border: none;
+            margin: 0 10px 0 5px;
+        }
+         #submit:hover{
+            background-color: rgb(167, 9, 9);
+            transition: 0.5s;
+        }
+        
+        /*---------------------------------------------- Display Playlist Section   -------------------------------------------------------------*/
+        
+        section{
+             display: block;
+        }
+        .particane{
+            width: 100%;
+            height: 85vh;
+            padding: 50px 0px;  
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: black;
+              margin: 10px 0;
+        }
+         .text{
+            width: 30%;
+            float: left;
+            margin-bottom: 20px;
+        }
+         .tv{
+            float: right;
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+         .tv img{
+            display: block;
+            width: 90%;
+            margin: auto;
+        }
+        .text h1{
+            font-size: 40px;
+            padding-bottom: 10px;
+        }
+        .text h3{
+            font-size: 12px;
+        }
+           
+        
+        /* --------------------------------------------------- Accordion Question Section ------------------------------------------------------- */
+          
+        main{
+        width: 100%;
+        background-color: black;
+        font-weight: 500;
+        padding-bottom: 20px;
+        
+        }
+        main h1{
+        padding-top: 20px ;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        }
+        .accordian{
+        margin: 60px auto;
+         width: 80%
+         
+        }
+        .accordian li{
+        list-style: none;
+        width: 90%;
+        margin: 20px;
+        background:rgb(59, 57, 57) ;
+        padding: 10px;
+        border-radius: 5px;
+        
+        }
+        .accordian li label{
+           padding: 10px;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           font-size: 18px;
+           font-weight: 500;
+           cursor: pointer;
+        }
+        .accordian li:hover{
+        background-color: rgb(118, 115, 115) ;
+        transform: 0.5s  ;
+        }
+        .accordian label:hover{
+        background-color: rgb(118, 115, 115) ;
+        transform: 0.5s  ;
+        }
+        
+        input[type="radio"]{
+        display: none;
+        }
+        .accordian .content{
+        margin-top: 1px;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s , padding 0.5s;
+        background-color: rgb(49, 48, 48);
+        }
+        .accordian input[type="radio"]:checked + label + .content{
+        max-height: 400px;
+        padding: 10px 10px 20px;
+        }
+        .finalBut{
+        display: grid;
+        justify-content: center;
+        }
+        .finalBut h4{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+        }
+        .hesder-form01{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        }
+        #but1{
+        width: 60%;
+        height: 40px;
+        background: transparent;
+        border:  1px solid rgb(75, 74, 74);
+        border-radius: 4px;
+        padding: 5px 15px;
+        margin: 0 10px;
+        }
+        #but2{
+        width: 30%;
+        height: 50px;
+        background-color: red;
+        border-radius: 4px;
+        border: 1px solid red;
+        font-size: 20px;
+        padding: 5px 15px;
+        }
+        #but2:hover{
+        background-color: rgb(159, 5, 5);
+        transform: 0.5s;
+        }
+        
+        
+        /* ------------------------------------------------------ final Sectionv --------------------------------------------------------------- */
+        
+        
+        .finalSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+        .finalSection img{
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+        border-radius: 10px;
+        }
+        .finalSection p{
+        font-size: 50px;
+        color: red;
+        }
+        
+        
+        
+        /* --------------------------------------------------------------- Media-query --------------------------------------------------------- */
+        
+        
+        @media screen and (0 <= width <= 660px){
+        header nav {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav .logo{
+            padding: 20px;
+        }
+        nav .butTwo{
+          width: 100%;
+          display: flex;
+        }
+        .hesder-form{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+        }
+        .particane{
+          height: 90vh;
+          display: block;
+          flex-wrap: wrap;
+        }
+        .particane .text{
+          width: 100%;
+        }
+        .particane .text h1{
+          display: flex;
+          justify-content: center;
+          font-size: 30px;
+          padding: 0 20px;
+          text-align: center;
+        }
+        .particane .text h3{
+          display: flex;
+          justify-content: center;
+          font-size: 17px;
+          padding: 0 30px;
+          text-align: center;
+        }
+        .hesder-form01{
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+        }
+        }
+        
